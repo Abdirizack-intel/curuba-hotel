@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CURUBA HOTEL</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Horizontal Bottom Navigation Bar -->
+    <nav class="bottom-nav horizontal-nav">
+      <a href="#home" aria-label="Home" class="nav-icon">🏠</a>
+      <a href="#menu" aria-label="Menu" class="nav-icon">🍽️</a>
+      <a href="#about" aria-label="About" class="nav-icon">🏨</a>
+      <a href="#location" aria-label="Location" class="nav-icon">📍</a>
+      <a href="#contact" aria-label="Contact" class="nav-icon">✉️</a>
+    </nav>
+    <main>
+      <section id="home" class="hero">
+        <form
+          class="search-bar hero-search"
+          role="search"
+          aria-label="Site Search"
+          onsubmit="return false;">
+          <input
+            type="text"
+            id="site-search"
+            placeholder="Search..."
+            aria-label="Search" />
+          <button type="submit" aria-label="Submit Search">🔍</button>
+        </form>
+        <h1>Welcome to CURUBA HOTEL</h1>
+        <p>Your comfort is our priority.</p>
+        <div class="about-preview">
+          <h2>Hotel Design Preview</h2>
+          <div class="slider-container">
+            <button class="slider-btn prev" aria-label="Previous image">&#8592;</button>
+            <div class="slider-image img-placeholder" id="slider-image">Hotel Design 1</div>
+            <button class="slider-btn next" aria-label="Next image">&#8594;</button>
+          </div>
+          <div class="slider-indicator" id="slider-indicator">1 / 2</div>
+        </div>
+      </section>
+      <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div class="img-placeholder">Image 1</div>
+            <h3>Grilled Chicken</h3>
+            <p>Juicy grilled chicken served with fresh vegetables.</p>
+            <div class="price">$12.99</div>
+            <button class="order-btn">Order</button>
+          </div>
+          <div class="menu-item">
+            <div class="img-placeholder">Image 2</div>
+            <h3>Veggie Pizza</h3>
+            <p>Delicious pizza topped with seasonal vegetables and cheese.</p>
+            <div class="price">$9.99</div>
+            <button class="order-btn">Order</button>
+          </div>
+          <div class="menu-item">
+            <div class="img-placeholder">Image 3</div>
+            <h3>Beef Burger</h3>
+            <p>Classic beef burger with fries and salad.</p>
+            <div class="price">$10.99</div>
+            <button class="order-btn">Order</button>
+          </div>
+          <!-- Add more menu items as needed -->
+        </div>
+        <button class="view-all-btn">View All Items</button>
+      </section>
+
+      <section id="featured" class="featured">
+        <h2>Featured Items</h2>
+        <div class="featured-list">
+          <div class="featured-item">
+            <div class="img-placeholder">Image 4</div>
+            <h3>Seafood Platter</h3>
+            <div class="price">$18.99</div>
+            <button class="order-btn">Order</button>
+          </div>
+          <div class="featured-item">
+            <div class="img-placeholder">Image 5</div>
+            <h3>Chocolate Cake</h3>
+            <div class="price">$6.99</div>
+            <button class="order-btn">Order</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="popular" class="popular">
+        <h2>Most Popular Items</h2>
+        <div class="popular-list">
+          <div class="popular-item">
+            <div class="img-placeholder">Image 6</div>
+            <h3>Spaghetti Bolognese</h3>
+            <div class="price">$11.99</div>
+            <button class="order-btn">Order</button>
+          </div>
+          <div class="popular-item">
+            <div class="img-placeholder">Image 7</div>
+            <h3>Caesar Salad</h3>
+            <div class="price">$8.99</div>
+            <button class="order-btn">Order</button>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="location" class="location">
+        <h2>Our Location</h2>
+        <div class="location-placeholder">Location details coming soon...</div>
+      </section>
+      <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-col hotel-info">
+          <h3>CURUBA HOTEL</h3>
+          <p>
+            Experience luxury and comfort in the heart of the city. <br />
+            Your satisfaction is our priority.
+          </p>
+        </div>
+        <div class="footer-col social-icons">
+          <h4>Follow Us</h4>
+          <div class="footer-social footer-social-large">
+            <a href="#" aria-label="Facebook" class="footer-social-icon">&#x1F426;</a>
+            <a href="#" aria-label="Instagram" class="footer-social-icon">&#x1F33A;</a>
+            <a href="#" aria-label="Twitter" class="footer-social-icon">&#x1F426;</a>
+            <a href="#" aria-label="WhatsApp" class="footer-social-icon">&#x1F4F1;</a>
+            <a href="#" aria-label="TikTok" class="footer-social-icon">&#x1F3A4;</a>
+          </div>
+        </div>
+        <div class="footer-col contact-info">
+          <h4>Contact</h4>
+          <p>Email: info@curubahotel.com</p>
+          <p>Phone: +123 456 7890</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook" class="footer-social-icon"
+              >&#x1F426;</a
+            >
+            <a href="#" aria-label="Instagram" class="footer-social-icon"
+              >&#x1F33A;</a
+            >
+            <a href="#" aria-label="Twitter" class="footer-social-icon"
+              >&#x1F426;</a
+            >
+          </div>
+
+        </div>
+      </div>
+      <div class="footer-illustration">
+        <svg
+          width="180"
+          height="80"
+          viewBox="0 0 180 80"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="Hotel Illustration">
+          <rect x="10" y="40" width="50" height="30" rx="4" fill="#f4b942" />
+          <rect x="65" y="30" width="40" height="40" rx="4" fill="#2e8b57" />
+          <rect
+            x="110"
+            y="45"
+            width="60"
+            height="25"
+            rx="4"
+            fill="#fff"
+            stroke="#2e8b57"
+            stroke-width="2" />
+          <rect x="25" y="55" width="10" height="15" rx="2" fill="#fff" />
+          <rect x="80" y="50" width="10" height="20" rx="2" fill="#fff" />
+          <rect x="130" y="60" width="10" height="10" rx="2" fill="#f4b942" />
+          <circle cx="145" cy="55" r="5" fill="#2e8b57" />
+          <rect x="120" y="50" width="8" height="8" rx="1" fill="#2e8b57" />
+          <rect x="150" y="50" width="8" height="8" rx="1" fill="#2e8b57" />
+          <rect x="170" y="65" width="5" height="5" rx="1" fill="#f4b942" />
+          <ellipse cx="90" cy="78" rx="80" ry="4" fill="#222" opacity="0.2" />
+           <li><a href="#about">About</a></li>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CURUBA HOTEL. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
